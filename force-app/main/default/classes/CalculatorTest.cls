@@ -8,7 +8,7 @@ private class CalculatorTest {
         Double expected = 50.0;
         
         // Act
-        Double result = Calculator.multiplication(num1, num2);
+        Double result = Calculator.mul(num1, num2);
         
         // Assert
         System.assertEquals(expected, result, 'The multiplication method did not return the expected result.');
@@ -21,7 +21,7 @@ private class CalculatorTest {
         Double expected = 0.0;
         
         // Act
-        Double result = Calculator.multiplication(num1, num2);
+        Double result = Calculator.mul(num1, num2);
         
         // Assert
         System.assertEquals(expected, result, 'Multiplication by zero should return zero.');
@@ -34,7 +34,7 @@ private class CalculatorTest {
         Double expected = -50.0;
         
         // Act
-        Double result = Calculator.multiplication(num1, num2);
+        Double result = Calculator.mul(num1, num2);
         
         // Assert
         System.assertEquals(expected, result, 'Multiplication with a negative number did not return the expected result.');
