@@ -13,6 +13,19 @@ private class CalculatorTest {
         // Assert
         System.assertEquals(expected, result, 'The multiplication method did not return the expected result.');
     }
+
+    @isTest static void testAdd() {
+        // Arrange
+        Double num1 = 5.0;
+        Double num2 = 10.0;
+        Double expected = 15.0;
+        
+        // Act
+        Double result = Calculator.add(num1, num2);
+        
+        // Assert
+        System.assertEquals(expected, result, 'The add method did not return the expected result.');
+    }
     
     @isTest static void testMultiplicationWithZero() {
         // Testing multiplication by zero
